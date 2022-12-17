@@ -1,10 +1,12 @@
 baseURL = 'https://jrgn.org'
 languageCode = 'en-us'
 title = "j__r0d's garage network"
-author = 'j__r0d'
+author = '~/j__r0d'
 copyright = '© 2022 jrgn.org'
 
-# theme settings
+publishDir = "W:\\"
+
+# ----- Begin theme settings -----
 theme = "risotto"
 
 enableInlineShortcodes = true
@@ -23,9 +25,9 @@ palette = "base16-dark"
 
 # Sidebar: about/bio
 [params.about]
-title = "jrgn"
+title = "jrgn.org"
 description = "The online presence for j__r0d’s garage network, a personal homelab"
-logo = "images/rice.svg"
+logo = "avatars/BRZ (125x125).jpg"
 
 # Sidebar: social links
 # Available icon sets:
@@ -59,24 +61,30 @@ series = "series"
 [markup.goldmark.renderer]
 unsafe = true
 
+# ----- End theme settings -----
+
 [privacy]
-
-  [privacy.vimeo]
-    disabled = false
-    simple = true
-
-  [privacy.twitter]
-    disabled = false
-    enableDNT = true
-    simple = true
-
+  [privacy.disqus]
+    disable = false
+  [privacy.googleAnalytics]
+    anonymizeIP = false
+    disable = false
+    respectDoNotTrack = false
+    useSessionStorage = false
   [privacy.instagram]
-    disabled = false
-    simple = true
-
+    disable = false
+    simple = false
+  [privacy.twitter]
+    disable = false
+    enableDNT = false
+    simple = false
+  [privacy.vimeo]
+    disable = false
+    enableDNT = false
+    simple = false
   [privacy.youtube]
-    disabled = false
-    privacyEnhanced = true
+    disable = false
+    privacyEnhanced = false
 
 [services]
 
