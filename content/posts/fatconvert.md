@@ -1,6 +1,7 @@
 ---
-title: "Fatconvert"
+title: "fatconvert"
 date: 2022-12-16T17:58:32-07:00
+author: "~/j__r0d"
 draft: true
 ---
 

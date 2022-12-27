@@ -1,6 +1,7 @@
 ---
 title: "Second First Post"
 date: 2022-12-16T17:05:30-07:00
+author: "~/j__r0d"
 draft: false
 ---
 

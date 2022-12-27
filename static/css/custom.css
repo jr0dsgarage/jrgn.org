@@ -1,4 +1,42 @@
 /* Override this file to customise the theme's CSS for your site */
+.page__logo-top {
+    padding: 0;
+    margin: 0;
+    font-weight: inherit;
+    color: var(--bg);
+}
+
+.page__logo-top:before {
+    content: "🏠test";
+}
+
+.page__logo-top-inner {
+    display: block;
+    background: var(--logo);
+    opacity: 0.90;
+    padding: 0.25rem;
+}
+
+a.page__logo-top-inner:link, a.page__logo-top-inner:visited {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+a.page__logo-top-inner:hover,
+a.page__logo-top-inner:active {
+    opacity: 1;
+}
+
+.page__logo-top-inner:before {
+    content: "[";
+    color: var(--bg);
+}
+
+.page__logo-top-inner:after {
+    content: "]";
+    color: var(--bg);
+}
+
 .page__logo-inner:after {
     content: "]~$";
     color: var(--bg);

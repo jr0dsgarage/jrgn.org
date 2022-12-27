@@ -1,6 +1,7 @@
 ---
 title: "j__r0d's First Post"
 date: 2022-12-06T19:02:43-07:00
+author: "~/j__r0d"
 draft: false
 ---
 `This post was salvaged from my first attempt at making a hugo website, before I obliterated it accidentally`
