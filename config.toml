@@ -1,7 +1,7 @@
 baseURL = 'https://jrgn.org'
 languageCode = 'en-us'
 title = "j__r0d's garage network"
-author = '~/j__r0d'
+author = "~/j__r0d"
 copyright = '© 2022 jrgn.org'
 
 publishDir = "W:\\"
@@ -19,9 +19,10 @@ sectionPagesMenu = "main"
 
 [params]
 noindex = false
+author = "~/j__r0d"
 
 [params.theme]
-palette = "base16-dark"
+palette = "base16-dark-custom"
 
 # Sidebar: about/bio
 [params.about]
@@ -40,17 +41,23 @@ title = "GitHub"
 url = "https://github.com/jr0dsgarage"
 
 [[params.socialLinks]]
+icon = "fa-brands fa-mastodon"
+title = "Mastadon"
+url = "https://mastodon.social/@j__r0d#"
+
+[[params.socialLinks]]
 icon = "fa-solid fa-envelope"
 title = "Email"
 url = "mailto:jrods.mailbox@gmail.com"
 
-[menu]
-#
+
+
+#[menu]
 #  [[menu.main]]
 #    identifier = "about"
-#    name = "About"
-#    url = "/about/"
-#    weight = 10
+#    name = "Apple II"
+#    url = "/a2/"
+#   weight = 10 
 
 [taxonomies]
 category = "categories"
@@ -83,6 +90,9 @@ unsafe = true
     enableDNT = false
     simple = false
   [privacy.youtube]
+    disable = false
+    privacyEnhanced = false
+  [privacy.mastodon]
     disable = false
     privacyEnhanced = false
 
