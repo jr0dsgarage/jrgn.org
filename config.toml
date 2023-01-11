@@ -66,6 +66,8 @@ series = "series"
 # For hugo >= 0.60.0, enable inline HTML
 [markup.goldmark.renderer]
 unsafe = true
+[markup.goldmark.parser.attribute]
+block = true
 
 # ----- End theme settings -----
 
