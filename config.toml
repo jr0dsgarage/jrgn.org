@@ -53,12 +53,11 @@ url = "mailto:jrods.mailbox@gmail.com"
 
 
 
-#[menu]
-#  [[menu.main]]
-#    identifier = "about"
-#    name = "Apple II"
-#    url = "/a2/"
-#   weight = 10 
+[menu]
+  [[menu.main]]
+    identifier = "a2"
+    name = "Apple II"
+    url = "/a2/"
 
 [taxonomies]
 category = "categories"
@@ -68,6 +67,8 @@ series = "series"
 # For hugo >= 0.60.0, enable inline HTML
 [markup.goldmark.renderer]
 unsafe = true
+[markup.goldmark.parser.attribute]
+block = true
 
 # ----- End theme settings -----
 
