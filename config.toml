@@ -3,6 +3,7 @@ languageCode = 'en-us'
 title = "j__r0d's garage network"
 author = "~/j__r0d"
 copyright = '© 2022 jrgn.org'
+googleAnalytics = 'G-CNQE23ECH5'
 
 publishDir = "W:\\"
 
