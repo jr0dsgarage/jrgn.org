@@ -1,25 +1,28 @@
 baseURL = 'https://jrgn.org'
 languageCode = 'en-us'
 title = "j__r0d's garage network"
-author = "~/j__r0d"
+author = "j__r0d"
 copyright = "© 2022 jrgn.org"
-
-
 googleAnalytics = "G-CNQE23ECH5"
 
 publishDir = "W:\\"
 
-# ----- Begin theme settings -----
+# ----- Site settings -----
 theme = "risotto"
-
 enableInlineShortcodes = true
-# prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
-# See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
 ignoreErrors = ["error-remote-getjson"]
+sectionPagesMenu = "main" # Automatically add content sections to main menu
+[markup.goldmark.renderer]
+unsafe = true
+[markup.goldmark.parser.attribute]
+block = true
 
-# Automatically add content sections to main menu
-sectionPagesMenu = "main"
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
 
+# -----.Site.Params-----
 [params]
 noindex = false
 source = "https://github.com/jr0dsgarage/jrgn.org"
@@ -27,17 +30,22 @@ source = "https://github.com/jr0dsgarage/jrgn.org"
 [params.theme]
 palette = "base16-dark-custom"
 
-# Sidebar: about/bio
-[params.about]
+[params.about] # to be used only in about section of Sidebar
 title = "jrgn.org"
 description = "The online presence for j__r0d’s garage network, a personal homelab"
 logo = "avatars/BRZ (125x125).jpg"
 
-# Sidebar: social links
+# -----Sidebar: menu items-----
+[menu] # Customize specific menu items
+  [[menu.main]]
+    identifier = "a2"
+    name = "Apple II"
+    url = "/a2/"
+
+# -----Sidebar: social links-----
 # Available icon sets:
 # * FontAwesome 6 <https://fontawesome.com/> ('fa-brands', 'fa-normal', or 'fa-solid' for brands)
 # * Academicons <https://jpswalsh.github.io/academicons> ('ai ai-')
-
 [[params.socialLinks]]
 icon = "fa-brands fa-github"
 title = "GitHub"
@@ -53,27 +61,7 @@ icon = "fa-solid fa-envelope"
 title = "Email"
 url = "mailto:jrods.mailbox@gmail.com"
 
-
-
-[menu]
-  [[menu.main]]
-    identifier = "a2"
-    name = "Apple II"
-    url = "/a2/"
-
-[taxonomies]
-category = "categories"
-tag = "tags"
-series = "series"
-
-# For hugo >= 0.60.0, enable inline HTML
-[markup.goldmark.renderer]
-unsafe = true
-[markup.goldmark.parser.attribute]
-block = true
-
-# ----- End theme settings -----
-
+# -----Privacy Settings-----
 [privacy]
   [privacy.disqus]
     disable = false
