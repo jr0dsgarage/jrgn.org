@@ -4,12 +4,13 @@
         align-items: center;
     }
 </style>
-<iframe class="youtube-player" type="text/html" width="640" height="385"
-    src="https://www.youtube.com/embed/{{ index .Params 0 }}" allowfullscreen frameborder="0">
-</iframe>
-
+<div class="ytplayer-container">
+    <iframe class="youtube-player" type="text/html"
+        src="https://www.youtube.com/embed/{{ index .Params 0 }}" allowfullscreen frameborder="0">
+    </iframe>
+</div>
 <button _="on click queue all
-    transition .youtube-player's opacity to 0 then hide .youtube-player
+    transition .ytplayer-container's opacity to 0 then hide .ytplayer-container
     hide me
     show .a2_index-story with display
     transition .a2_index-story's opacity to 100
