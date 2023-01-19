@@ -1,4 +1,4 @@
-<!-- use {{- partial "hyperscript-tests.html" . -}} wherever you want this to display -->
+<!-- use {{/*- partial "hyperscript-tests.html" . -*/}} wherever you want this to display, removing the /* and */ -->
 
 {{ $cursorSymbol := "﹍" }}
 {{ $resetSymbol := "↺" }}
@@ -16,8 +16,6 @@
         color: aqua;
     }
 </style>
-
-<script src="https://unpkg.com/hyperscript.org@0.9.7"></script>
 
 <h1>{{ "hyperscript tests" | markdownify }}</h1>
 
