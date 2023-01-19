@@ -2,8 +2,10 @@ baseURL = 'https://jrgn.org'
 languageCode = 'en-us'
 title = "j__r0d's garage network"
 author = "~/j__r0d"
-copyright = '© 2022 jrgn.org'
-googleAnalytics = 'G-CNQE23ECH5'
+copyright = "© 2022 jrgn.org"
+
+
+googleAnalytics = "G-CNQE23ECH5"
 
 publishDir = "W:\\"
 
@@ -20,7 +22,7 @@ sectionPagesMenu = "main"
 
 [params]
 noindex = false
-author = "~/j__r0d"
+source = "https://github.com/jr0dsgarage/jrgn.org"
 
 [params.theme]
 palette = "base16-dark-custom"
