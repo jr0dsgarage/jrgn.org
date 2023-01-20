@@ -1,19 +1,35 @@
 <style>
-    button {
+    .magic_button-div {
+        display: flex;
         justify-content: center;
-        align-items: center;
+    }
+
+    .magic_button {
+        position: relative;
+        background-color: var(--link);
+        padding: 10px 20%;
+        color: white;
+        opacity: .9;
+        text-shadow: 1px 1px black;
+    }
+    button.magic_button:hover,
+    button.magic_button:active{
+        opacity: 1;
     }
 </style>
 <div class="ytplayer-container">
-    <iframe class="youtube-player" type="text/html"
-        src="https://www.youtube.com/embed/{{ index .Params 0 }}" allowfullscreen frameborder="0">
+    <iframe class="youtube-player" type="text/html" src="https://www.youtube.com/embed/{{ index .Params 0 }}"
+        allowfullscreen frameborder="0">
     </iframe>
 </div>
-<button _="on click queue all
-    transition .ytplayer-container's opacity to 0 then hide .ytplayer-container
-    hide me
-    show .a2_index-story with display
-    transition .a2_index-story's opacity to 100
-    toggle .emphasized on .apple-ii-forever">
-    Click here after watching the video!
-</button>
+<div class="magic_button-div">
+    <button class="magic_button" 
+            _="on click queue all
+            transition .ytplayer-container's opacity to 0 then hide .ytplayer-container
+            hide .magic_button-div
+            show .a2_index-story with display
+            transition .a2_index-story's opacity to 100
+            toggle .emphasized on .apple-ii-forever">
+        Click here after watching the video!
+    </button>
+</div>
